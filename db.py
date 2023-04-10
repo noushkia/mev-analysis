@@ -10,7 +10,7 @@ def get_inspect_database_uri():
     return f"postgresql+psycopg2://{username}:{password}@{host}/{db_name}"
 
 
-def _get_engine(uri: str):
+def get_engine(uri: str):
     return create_engine(
         uri,
         use_insertmanyvalues=True,
@@ -19,7 +19,7 @@ def _get_engine(uri: str):
 
 
 def _get_sessionmaker(uri: str):
-    return sessionmaker(bind=_get_engine(uri))
+    return sessionmaker(bind=get_engine(uri))
 
 
 def get_inspect_sessionmaker():
