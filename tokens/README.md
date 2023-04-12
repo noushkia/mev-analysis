@@ -3,8 +3,8 @@ This package gathers all the data required for advanced analysis of arbitrage tr
 
 
 ## Name Tag
-Used for better understanding of profit tokens.<br>
-Maps token addresses to their assigned etherscan name tag.
+Used for better understanding of addresses.<br>
+Maps Ethereum addresses to their assigned etherscan name tag.
 
 
 ## Token Price
@@ -55,8 +55,7 @@ Historic-Crypto: https://pypi.org/project/Historic-Crypto/ <br>
 Read https://medium.com/geekculture/3-simple-ways-to-obtain-cryptocurrency-data-in-python-f45b9d603a97
 
 
-<br>
-<br>
+____
 
 
 # Some issues with the current mev-inspector
@@ -68,19 +67,9 @@ hold part of the exchanged token to themselves due to price impact
 making total profit made by two tokens.<br>
 
 
-## No database implemented
-
 ## Lack of Useful Features
 Must gather more features for each arbitrage transaction<br>
 Proposed features:<br>
-    Gas price<br>
     Address txn history(?)<br>
-    Transaction log(?)<br>
     Transaction type(?)<br>
-    All addresses and tokens in the transaction(?)<br>
-    
-
-## Questions
-Are there any contract creations during arbitrages?<br>
-Might be able to use the input binary data of transaction?<br>
 
